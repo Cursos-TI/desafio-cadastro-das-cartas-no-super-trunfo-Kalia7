@@ -30,7 +30,7 @@ int main()
     printf("**Cadastro de Cartas**\n\n");
     printf("**Carta 1**\n\n");
     printf("Digite o nome de uma cidade que comece com a letra A: \n");
-    scanf("%49s", &nomeCidade1);
+    scanf("%49[^\n]", nomeCidade1); // Lê até a quebra de linha
     printf("Digite a população: \n");
     scanf("%d", &populacao1);
     printf("Digite a área em Km²: \n");
@@ -45,7 +45,7 @@ int main()
     //Cadastro da segunda carta
     printf("**Carta 2**\n\n");
     printf("Digite o nome de uma cidade que comece com a letra B: \n");
-    scanf("%49s", &nomeCidade2);
+    scanf("%49[^\n]", nomeCidade2);
     printf("Digite a população: \n");
     scanf("%d", &populacao2);
     printf("Digite a área em Km²: \n");
@@ -60,7 +60,7 @@ int main()
     // Exibir os dados cadastrados
     printf("\n******Cartas cadastradas********\n");
     printf("Carta 1\nEstado: A\nCódigo: A01\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f\nPontos turísticos: %d\nDensidade Populacional: %.2f\nPIB per Capta: %.2f\n\n", nomeCidade1, populacao1, area1, pib1, pontosTuristicos1, densidadePopulacional1, pibCapta1);
-    printf("Carta 2\nEstado: B\nCódigo: B01\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f\nPontos turísticos: %d\nDensidade Populacional: %.2f\nPIB per Capta: %.2f\n", nomeCidade2, populacao2, area2, pib2, pontosTuristicos2, densidadePopulacional1, pibCapta1);
+    printf("Carta 2\nEstado: B\nCódigo: B01\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f\nPontos turísticos: %d\nDensidade Populacional: %.2f\nPIB per Capta: %.2f\n", nomeCidade2, populacao2, area2, pib2, pontosTuristicos2, densidadePopulacional2, pibCapta2);
    
 
     return 0;
